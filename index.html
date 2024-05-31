@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python</header>
+        <ul class="navul">
+            <li class="navli"><a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a></li>
+            <li class="navli"><a class="nav-link" href="#Benefits_of_Python">Benefits of Python</a></li>
+            <li class="navli"><a class="nav-link" href="#What_Python_can_do">What Python can do</a></li>
+            <li class="navli"><a class="nav-link" href="#Python_Comments">Python Comments</a></li>
+            <li class="navli"><a class="nav-link" href="#Variables">Variables</a></li>
+            <li class="navli"><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section"  id="Introduction_to_Python">
+            <header>Introduction to Python</header>
+            <article>
+                <p>
+                    Python is a high level general-purpose programming language. It uses a multi-paradigm approach,
+                    meaning it supports procedural, object-oriented, and some functional programming constructs.</p>
+                 <p>It was created by Guido van Rossum as a successor to another language (called ABC) between 1985 and 1990, and is currently used on a large array of domains like web development, desktop applications, data science, DevOps, and automation/productivity.</p>
+                 <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Benefits_of_Python">
+            <header>Benefits of Python</header>
+            <article>
+            <p>
+            <ul>
+            <li>Web development (server-side),</li>
+                    <li>Software development,</li>
+                    <li>Mathematics,</li>
+                    <li>System scripting, class="navul"</li>
+                    <li>Easy to Understand Language</li>
+            </ul>
+            </p>
+            <p>And many more...</p>
+            </article>
+        </section>
+        <section class="main-section" id="What_Python_can_do">
+            <header>What Python can do</header>
+            <article>
+                <p>• Python can be used on a server to create web applications.</p>
+                <p>• Python can be used alongside software to create workflows.</p>
+                <p>• Python can connect to database systems. It can also read and modify files.</p>
+                <p>• Python can be used to handle big data and perform complex mathematics.</p>
+                <p>• Python can be used for rapid prototyping, or for production-ready software
+                    development.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Python_Comments">
+            <header>Python Comments</header>
+            <article>
+                <p>Comments can be used to explain Python code.<br>
+                    Comments can be used to make the code more readable.<br>
+                    Comments can be used to prevent execution when testing way. </p>
+                <h1>Creating a Comment:</h1>
+                <h2>Singleline Comments</h2>
+                <p>Example:</p>
+                <code> • #This is a comment<br>
+                    • print("Hello, World!")<br>
+                    • print("Hello, World!") #This is a comment<br>
+                    • #print("Hello, World!")</code>
+                <p>Comments starts with a #, and Python will ignore them:</p>
+                <h2>Multiline Comments</h2>
+
+                <p>Python does not really have a syntax for multiline comments.<br>
+                    To add a multiline comment you could insert a # for each line:</p>
+                <p>Example:</p>
+                <code>#This is a comment<br>
+                    #written in<br>
+                    #more than just one line<br>
+                    print("Hello, World!")</code>
+                <p>Or, not quite as intended, you can use a multiline string.<br>
+                    Since Python will ignore string literals that are not assigned to a variable, you can add a
+                    multiline string (triple quotes) in your code, and place your comment inside it:</p>
+                <p>Example:</p>
+                <code>"""This is a comment<br>
+                    written in<br>
+                    more than just one line<br>
+                    """<br>
+                    print("Hello, World!")</code>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+                <h1>Variable Names</h1>
+                <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname,
+                    total_volume). Rules for Python variables:<br>
+                    • A variable name must start with a letter or the underscore character<br>
+                    • A variable name cannot start with a number<br>
+                    • A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9,
+                    and _ )<br>
+                    • Variable names are case-sensitive (age, Age and AGE are three different variables)<br>
+                    • A variable name cannot be any of the Python keywords.</p>
+                <p>Examples:</p>
+                <code>Legal variable names:<br>
+                    myvar = "John"<brcode
+                    my_var = "John"<br>
+                    _my_var = "John"<br>
+                    myVar = "John"<br>
+                    MYVAR = "John"<br>
+                    myvar2 = "John"</code>
+                <p>Examples:</p>
+                <code>Illegal variable names:<br>
+                    2myvar = "John"<br>
+                    my-var = "John"<br>
+                    my var = "John"</code>
+                <h1>Creating Variable</h1>
+                <p>Python has no command for declaring a variable.<br>
+                    A variable is created the moment you first assign a value to it.</p>
+                <p>Example:</p>
+                <code>x = 5<br>
+                    y = "John"<br>
+                    print(x)<br>
+                    print(y</code>
+                <p>Variables do not need to be declared with any particular type, and can even change type
+                    after they have been set.</p>
+                <p>Example:</p>
+                <code>x = 4 # x is of type int<br>
+                    x = "Sally" # x is now of type str<brcode
+                    print(x)
+                </code>
+                <h1>Casting</h1>
+                <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                <p>Example:</p>
+                <code>x = str(3) # x will be '3'<br>
+                    y = int(3) # y will be 3<br>
+                    z = float(3) # z will be 3.0</code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <h1>Built-in Data Types</h1>
+                <p>In programming, data type is an important concept.<br>
+                    Variables can store data of different types, and different types can do different things.</p>
+                <p>In Python, the data type is set when you assign a value to a variable:</p>
+                <p>Example:</p>
+                <code>Example Data Type Try it<br>
+                    x = "Hello World" str<br>
+                    x = 20 int<br>
+                    x = 20.5 float<br>
+                    x = 1j complex<br>
+                    x = ["apple", "banana", "cherry"] list<br>
+                    x = ("apple", "banana", "cherry") tuple<br>
+                    x = range(6) range<br>
+                    x = {"name" : "John", "age" : 36} dict<br>
+                    x = {"apple", "banana", "cherry"} set<br>
+                    x = frozenset({"apple", "banana",
+                    "cherry"})
+                    frozenset<br>
+                    x = True bool<br>
+                    x = b"Hello" bytes<br>
+                    x = bytearray(5) bytearray<br>
+                    x = memoryview(bytes(5)) memoryview<br>
+                    x = None NoneType
+                </code>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
